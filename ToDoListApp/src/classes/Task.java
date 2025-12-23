@@ -8,7 +8,7 @@ public class Task {
     private static int idCounter = 1;
     private int id;
     private String description;
-    private LocalDate deadline; // **Changed to LocalDate for better date handling**
+    private LocalDate deadline;  /** Changed to LocalDate for better date handling */
     private boolean isCompleted;
     private String priority; // New attribute for task priority
     
@@ -16,7 +16,7 @@ public class Task {
     public Task(String description, String deadline, String priority) {
         this.id = idCounter++;
         this.description = description;
-        setDeadline(deadline);  // **Updated to call the new setDeadline method**
+        setDeadline(deadline);  /** Changed to LocalDate for better date handling */
         this.priority = priority; // Set priority
         this.isCompleted = false;
     }
@@ -47,7 +47,7 @@ public class Task {
         System.out.println("Task ID " + id + " marked as completed."); // Log completion
     }
 
-    // Method to set the deadline with validation
+    /** Method to set the deadline with validation */
     public void setDeadline(String deadline) {
         try {
             DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
@@ -64,7 +64,7 @@ public class Task {
         return "Task ID: " + id +
                ", Description: " + description +
                ", Deadline: " + deadline +
-               ", Completed: " + (isCompleted ? "Yes" : "No")+
+               ", Completed: " + (isCompleted ? "Yes" : "No") + // Modified to accommodate LocalDate
                ", Priority: " + priority; // Include priority in toString;
     }
 }
