@@ -48,6 +48,8 @@ public class Task {
     }
 
     /** Method to set the deadline with validation */
+    // Method to set the deadline with validation
+    // Add more Date Format Patterns for variation
     public void setDeadline(String deadline) {
         try {
             DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
