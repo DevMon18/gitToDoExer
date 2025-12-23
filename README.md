@@ -59,18 +59,6 @@ Main application controller that handles:
 
 ---
 
-## 💻 Technology Stack
-
-| Component | Technology |
-|-----------|-----------|
-| **Language** | Java 8+ |
-| **Data Structure** | ArrayList for task storage |
-| **Date Handling** | java.time.LocalDate |
-| **Input/Output** | Scanner (console-based) |
-| **Version Control** | Git |
-
----
-
 ## 🔄 Application Flow
 
 ```
