@@ -47,7 +47,6 @@ public class Task {
         System.out.println("Task ID " + id + " marked as completed."); // Log completion
     }
 
-    /** Method to set the deadline with validation */
     // Method to set the deadline with validation
     // Add more Date Format Patterns for variation
     public void setDeadline(String deadline) {
