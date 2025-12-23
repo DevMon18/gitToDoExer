@@ -30,10 +30,9 @@ The To-Do List Application is a Java-based console application designed to help 
 ```
 ToDoListApp/
 ├── src/
-│   ├── ToDoList.java       # Main application class
+│   ├── App.java       # Main application class
 │   ├── Task.java           # Task entity class
-│   ├── Priority.java       # Priority enum (HIGH, MEDIUM, LOW)
-│   └── Category.java       # Category enum (WORK, PERSONAL, etc.)
+│   ├── TaskManager.java    # Priority enum (HIGH, MEDIUM, LOW)
 ├── .gitignore              # Git ignore rules
 └── README.md               # Project documentation
 ```
