@@ -13,6 +13,16 @@ public class TaskManager {
     public void addTask(Task task) {
         tasks.add(task);
     }
+    
+    // Function to remove task by index
+    public void deleteTask(int index) {
+        tasks.remove(index);
+    }
+
+    // Method to remove all tasks  
+    public void clearTaskList() {
+        tasks.clear();
+    }
 
     public void viewTasks() {
         if (tasks.isEmpty()) {
