@@ -23,7 +23,7 @@ public class TaskManager {
     public void clearTaskList() {
         tasks.clear();
     }
-
+// Method to view all tasks
     public void viewTasks() {
         if (tasks.isEmpty()) {
             System.out.println("No tasks available.");
@@ -33,7 +33,7 @@ public class TaskManager {
             }
         }
     }
-
+// Method to mark a task as completed by its ID
     public boolean markTaskAsCompleted(int taskId) {
         for (Task task : tasks) {
             if (task.getId() == taskId) {
